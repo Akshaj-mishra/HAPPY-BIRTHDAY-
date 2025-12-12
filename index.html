@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday 🎉</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #fff7f0;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      width: 100%;
+      background: url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: white;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 600;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+      transform: scale(1);
+      transition: 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ffefe0;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <div class="hero" data-aos="fade-up" data-aos-duration="1500">
+    <h1>Happy Birthday 🎉</h1>
+    <p>You are the brightest part of everyone's life ❤️</p>
+  </div>
+
+  <h2 class="section-title" data-aos="zoom-in">✨ Beautiful Memories ✨</h2>
+
+  <!-- GALLERY SECTION -->
+  <div class="gallery">
+    <img src="img/photo1.jpg" data-aos="fade-up" data-aos-duration="800">
+    <img src="img/photo2.jpg" data-aos="fade-up" data-aos-duration="900">
+    <img src="img/photo3.jpg" data-aos="fade-up" data-aos-duration="1000">
+    <img src="img/photo4.jpg" data-aos="fade-up" data-aos-duration="1100">
+    <img src="img/photo5.jpg" data-aos="fade-up" data-aos-duration="1200">
+    <img src="img/photo6.jpg" data-aos="fade-up" data-aos-duration="1300">
+    <img src="img/photo7.jpg" data-aos="fade-up" data-aos-duration="1400">
+    <img src="img/photo8.jpg" data-aos="fade-up" data-aos-duration="1500">
+    <img src="img/photo9.jpg" data-aos="fade-up" data-aos-duration="1600">
+    <img src="img/photo10.jpg" data-aos="fade-up" data-aos-duration="1700">
+    <img src="img/photo11.jpg" data-aos="fade-up" data-aos-duration="1800">
+    <img src="img/photo12.jpg" data-aos="fade-up" data-aos-duration="1900">
+  </div>
+
+  <div class="footer" data-aos="fade-up" data-aos-duration="1500">
+    Made with ❤️ for your special day.
+  </div>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 80,
+    });
+  </script>
+
+</body>
+</html>
